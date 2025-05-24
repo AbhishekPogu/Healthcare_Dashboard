@@ -1,0 +1,38 @@
+.simpleCard {
+  background-color: var(--light-blue);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.cardIcon {
+  background-color: var(--primary-blue);
+  color: var(--card-bg);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTitle {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  margin: 0;
+}
+
+.cardTime {
+  font-size: var(--font-size-small);
+  color: var(--text-color-dark);
+}

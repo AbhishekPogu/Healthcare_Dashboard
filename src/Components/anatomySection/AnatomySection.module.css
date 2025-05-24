@@ -1,0 +1,93 @@
+.anatomySection {
+  position: relative;
+  width: 250px; 
+  height: 300px;
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; 
+}
+
+.bodyImageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bodyImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.heartIndicator {
+  position: absolute;
+  top: 15%; 
+  left: 60%; 
+  background-color: var(--green-healthy); 
+  color: var(--card-bg);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-small);
+  white-space: nowrap;
+  box-shadow: var(--shadow-sm);
+}
+.legIndicator {
+  position: absolute;
+  top: 75%;
+  left: 25%; 
+  transform: translate(-50%, -70%); 
+
+  color: rgb(24, 24, 186); 
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-small);
+  white-space: nowrap;
+  box-shadow: var(--shadow-sm);
+  font-weight: 500;
+  
+}
+.indicatorIcon {
+  font-size: var(--font-size-base);
+}
+.indicatorIcons{
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+.indicatorText {
+  font-weight: 500px;
+}
+.indicatorTexts{
+  font-weight: 500px;
+  margin-right: 2px;
+  background-color: rgb(174, 221, 225);
+  color: rgb(22, 4, 96);
+  padding: 5px;
+  border-radius: 7px;
+}
+
+
+@media (max-width: 1024px) {
+  .anatomySection {
+    width: 80%; 
+    height: 350px; 
+  }
+}
+@media (max-width: 768px) {
+  .anatomySection {
+    width: 100%;
+    height: 300px;
+  }
+}

@@ -1,0 +1,67 @@
+.activityFeed {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+}
+
+.sectionTitle {
+  font-size: var(--font-size-medium);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.appointmentCount {
+  font-size: var(--font-size-small);
+  color: var(--text-color-light);
+  margin-bottom: var(--spacing-md);
+}
+
+.chartContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end; 
+  height: 100px; 
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--border-color);
+  background-color: rgba(223, 233, 233, 0.255);
+}
+
+.chartBarWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+ 
+}
+
+.chartBar {
+  width: 10px; 
+  background-color: var(--primary-blue);
+  border-radius: var(--border-radius-sm);
+  transition: height 0.3s ease; 
+}
+
+.chartDay {
+  font-size: var(--font-size-small);
+  color: var(--text-color-light);
+  margin-top: var(--spacing-xs);
+}
+
+
+@media (max-width: 768px) {
+  .activityFeed {
+    padding: var(--spacing-sm);
+  }
+  .chartBar {
+    width: 8px;
+  }
+  .chartDay {
+    font-size: 10px;
+  }
+}

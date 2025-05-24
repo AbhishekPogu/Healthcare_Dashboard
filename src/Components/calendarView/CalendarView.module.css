@@ -1,0 +1,169 @@
+.calendarView {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.calendarHeader h3 {
+  font-size: var(--font-size-medium);
+  font-weight: 600;
+  margin: 0;
+}
+
+.navArrow {
+  font-size: var(--font-size-large);
+  color: var(--text-color-light);
+  cursor: pointer;
+}
+
+.daysOfWeek {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: 500;
+  color: var(--text-color-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+.dayName {
+  font-size: var(--font-size-small);
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.calendarDay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 80px; /* Adjust as needed */
+  border-radius: var(--border-radius-sm);
+  padding-top: var(--spacing-xs);
+}
+
+.dateNumber {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.appointments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.appointmentTime {
+  background-color: var(--light-blue);
+  color: var(--primary-blue);
+  padding: 2px 6px;
+  border-radius: var(--border-radius-sm);
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+
+ .calendarDay:nth-child(6) .dateNumber {
+  background-color: var(--primary-blue);
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+
+.appointmentDetails {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+
+}
+
+.detailCard {
+  background-color: var(--light-blue);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+ 
+}
+.detailCard:hover{
+  background-color: rgb(180, 223, 223);
+ transition: 0.6s ease-in-out;
+}
+.detailIcon {
+  font-size: var(--font-size-large);
+  color: var(--primary-blue);
+}
+
+.detailContent {
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+
+.detailTitle {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  margin: 0;
+}
+
+.detailTime {
+  font-size: var(--font-size-small);
+  color: var(--text-color-dark);
+  margin: 0;
+}
+
+.detailDoctor {
+  font-size: var(--font-size-small);
+  color: var(--text-color-light);
+  margin: 0;
+  color: rgb(123, 25, 25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .calendarView {
+    padding: var(--spacing-sm);
+  }
+  .calendarGrid {
+    gap: var(--spacing-xs);
+  }
+  .calendarDay {
+    min-height: 60px;
+  }
+  .appointmentTime {
+    font-size: 8px;
+    padding: 1px 4px;
+  }
+  .detailCard {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-sm);
+  }
+  .detailIcon {
+    margin-bottom: var(--spacing-xs);
+  }
+}

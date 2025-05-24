@@ -1,0 +1,41 @@
+:root {
+  /* Colors */
+  --primary-blue: #007bff; /* Example, adjust to image */
+  --light-blue: #e6f2ff; /* Example, adjust to image */
+  --sidebar-bg: #ffffff;
+  --header-bg: #ffffff;
+  --body-bg: #f5f7fa; /* Main background color */
+  --text-color-dark: #333333;
+  --text-color-light: #666666;
+  --text-color-lighter: #999999;
+  --border-color: #e0e0e0;
+  --card-bg: #ffffff;
+  --green-healthy: #28a745; /* Green for healthy status */
+  --red-issue: #dc3545; /* Red for issue status */
+  --purple-accent: #6f42c1; /* For some calendar highlights */
+
+  /* Fonts */
+  --font-family-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Adjust to match image, e.g., 'Inter', 'Roboto' */
+  --font-size-base: 14px;
+  --font-size-small: 12px;
+  --font-size-medium: 16px;
+  --font-size-large: 20px;
+  --font-size-xl: 24px;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Border Radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

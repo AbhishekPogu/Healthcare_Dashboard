@@ -1,0 +1,83 @@
+.healthCard {
+  background-color: rgb(244, 248, 249); 
+  border-radius: var(--border-radius-md); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); 
+  padding: var(--spacing-md); 
+  border-left: 6px solid var(--status-color); 
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm); 
+  
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+}
+
+.cardIconContainer {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px; 
+  height: 24px;
+  margin-right: var(--spacing-sm); 
+}
+
+.statusIconImage {
+  margin-left: 20px;
+  width: 60px;
+  object-fit: contain; 
+}
+
+.cardTitle {
+  
+  font-size: var(--font-size-medium); 
+  font-weight: 600; 
+  color: var(--text-color-dark); 
+  margin-left: 40px;
+  line-height: 1.2; 
+}
+
+.cardDate {
+  font-size: var(--font-size-small); 
+  color: var(--text-color-light); 
+  margin-left: calc(60px + var(--spacing-sm));
+  white-space: nowrap;
+  font-weight: 400; 
+}
+
+.detailsButton {
+  font-size: var(--font-size-small); 
+  color: var(--text-color-lighter);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  align-self: flex-end;
+  font-weight: 500; 
+}
+
+.arrow {
+  margin-left: 4px;
+  font-weight: bold; 
+  line-height: 1;
+}
+
+
+
+@media (max-width: 768px) {
+  .healthCard {
+    padding: var(--spacing-sm);
+  }
+  .cardTitle {
+    font-size: var(--font-size-base);
+  }
+  .cardDate, .detailsButton {
+    font-size: 11px;
+  }
+  .cardIconContainer {
+    width: 20px; 
+    height: 20px;
+  }
+}
