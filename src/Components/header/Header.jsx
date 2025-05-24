@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Header.module.css';
-
+import userAvatar from '../../assets/icons/avatar.jpg';
 
 function Header() {
   return (
@@ -16,7 +16,7 @@ function Header() {
       <div className={styles.userInfo}>
     
         <span className={styles.icon}>🔔</span>
-        <img src="/avatar.jpg" alt="User Avatar" className={styles.avatar} /> 
+        <img src={userAvatar} alt="User Avatar" className={styles.avatar} /> 
         <span>John Doe</span>
         
         <span className={styles.addIcon}>➕</span>

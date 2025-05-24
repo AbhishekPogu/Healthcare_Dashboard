@@ -3,7 +3,7 @@ import styles from './AnatomySection.module.css';
 import { anatomicalHealthData } from '../../data/healthData';
 import { IoMdQrScanner } from "react-icons/io";
 import { GiLeg } from "react-icons/gi";
-
+import bodyImage from '../../assets/icons/body.jpg';
 function AnatomySection() {
   const healthyHeart = anatomicalHealthData.find(item => item.part === 'Healthy Heart');
   const healthyLeg = anatomicalHealthData.find(item => item.part === 'Healthy Leg');
@@ -12,7 +12,7 @@ function AnatomySection() {
     <div className={styles.anatomySection}>
       <div className={styles.bodyImageContainer}>
         
-        <img src="/body.jpg" alt="Human Body" className={styles.bodyImage} /> 
+        <img src={bodyImage} alt="Human Body" className={styles.bodyImage} /> 
 
         {healthyHeart && (
           <div className={styles.heartIndicator} style={{ backgroundColor: healthyHeart.color }}>
